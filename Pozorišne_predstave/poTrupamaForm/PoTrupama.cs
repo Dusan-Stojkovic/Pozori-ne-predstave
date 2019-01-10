@@ -58,14 +58,5 @@ namespace Pozorišne_predstave
                 KomadiView.DataSource = dt2;
             }
         }
-
-        private void TrupaCombo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(TrupaCombo.Text == "")
-            {
-                IzvrsiButton.Enabled = false;
-            }
-            else { IzvrsiButton.Enabled = true; }
-        }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Pozorišne_predstave
 {
-    partial class RezervacijeForm
+    partial class RezervacijeForm 
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@
             this.ImeLabel = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.redniBrTextBox = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.BrSedistaTextBox = new System.Windows.Forms.TextBox();
             this.sifraTextBox = new System.Windows.Forms.TextBox();
             this.IzborGroup = new System.Windows.Forms.GroupBox();
             this.IzbrisiRadio = new System.Windows.Forms.RadioButton();
@@ -56,7 +56,7 @@
             this.IzvrsiButton.TabIndex = 0;
             this.IzvrsiButton.Text = "Izvrši";
             this.IzvrsiButton.UseVisualStyleBackColor = true;
-            this.IzvrsiButton.Click += new System.EventHandler(this.IzvrsiButton_Click);
+            this.IzvrsiButton.Click += new System.EventHandler(IzvrsiButton_Click);
             // 
             // IzadjiButton
             // 
@@ -143,12 +143,13 @@
             this.redniBrTextBox.Size = new System.Drawing.Size(100, 20);
             this.redniBrTextBox.TabIndex = 10;
             // 
-            // textBox3
+            // BrSedistaTextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(94, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 12;
+            this.BrSedistaTextBox.Location = new System.Drawing.Point(94, 129);
+            this.BrSedistaTextBox.Name = "BrSedistaTextBox";
+            this.BrSedistaTextBox.Size = new System.Drawing.Size(100, 20);
+            this.BrSedistaTextBox.TabIndex = 12;
+            this.BrSedistaTextBox.TextChanged += new System.EventHandler(this.BrSedistaTextBox_TextChanged);
             // 
             // sifraTextBox
             // 
@@ -205,11 +206,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 334);
+            this.ClientSize = new System.Drawing.Size(476, 334);
             this.Controls.Add(this.KomadiComboBox);
             this.Controls.Add(this.IzborGroup);
             this.Controls.Add(this.sifraTextBox);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.BrSedistaTextBox);
             this.Controls.Add(this.redniBrTextBox);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.ImeLabel);
@@ -243,7 +244,7 @@
         private System.Windows.Forms.Label ImeLabel;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.TextBox redniBrTextBox;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox BrSedistaTextBox;
         private System.Windows.Forms.TextBox sifraTextBox;
         private System.Windows.Forms.GroupBox IzborGroup;
         private System.Windows.Forms.RadioButton IzbrisiRadio;
